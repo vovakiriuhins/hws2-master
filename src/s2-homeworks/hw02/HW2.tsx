@@ -40,7 +40,7 @@ export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): A
     if (filter === "all") {
         return affairs
     } else {
-        return affairs.filter(a => a.priority !== filter);
+        return affairs.filter(a => a.priority === filter);
     }
 
 }
